@@ -81,18 +81,18 @@ class Scraper
   end
     }
     
-    student = {
-    
-    
-    #:twitter => doc.css("div.social-icon-container a").first.attribute("href").text,
-    :twitter => twitter,
-    :linkedin => linkedin,
-    :github => github,
-    :blog => blog,
-    :profile_quote => doc.css("div.profile-quote").text,
-    :bio => doc.css("div.description-holder p").text
-    }
-    
+#    student = {
+#    
+#    
+#    #:twitter => doc.css("div.social-icon-container a").first.attribute("href").text,
+#    :twitter => twitter,
+#    :linkedin => linkedin,
+#    :github => github,
+#    :blog => blog,
+#    :profile_quote => doc.css("div.profile-quote").text,
+#    :bio => doc.css("div.description-holder p").text
+#    }
+#    
   end
 end
 
