@@ -39,11 +39,11 @@ class Scraper
     binding.pry
     student = {
     
-    :twitter => doc.css("a").attribute("href").text
-    :linkedin
-    :github
-    :blog
-    :profile_quote
+    :twitter => doc.css("a").attribute("href").text,
+    :linkedin,
+    :github,
+    :blog,
+    :profile_quote,
     :bio
     }
     
