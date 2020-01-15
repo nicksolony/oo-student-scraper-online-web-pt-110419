@@ -66,9 +66,9 @@ class Scraper
     
     #:twitter => doc.css("div.social-icon-container a").first.attribute("href").text,
     :twitter => twitter,
-    :linkedin => doc.css("div.social-icon-container a")[1].attribute("href").text,
+    :linkedin => linkedin,
     :github => github,
-    :blog => doc.css("div.social-icon-container a")[3].attribute("href").text,
+    :blog => blog,
     :profile_quote => doc.css("div.profile-quote").text,
     :bio => doc.css("div.description-holder p").text
     }
