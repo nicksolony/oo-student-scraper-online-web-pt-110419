@@ -67,13 +67,13 @@ class Scraper
     if xml.css("img") != nil
     case xml.css("img").attribute("src").text.split("/img/")[1]
     when "twitter-icon.png"
-      twitter = xml.css("a").attribute("href").text
+      twitter = xml.attribute("href").text
     when "linkedin-icon.png"
-      linkedin = xml.css("a").attribute("href").text
+      linkedin = xml.attribute("href").text
     when "github-icon.png"
-      github = xml.css("a").attribute("href").text
+      github = xml.attribute("href").text
     when "rss-icon.png"
-      blog = xml.css("a").attribute("href").text
+      blog = xml.attribute("href").text
     else
       nil
     end
