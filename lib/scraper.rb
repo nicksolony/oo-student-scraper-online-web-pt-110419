@@ -39,7 +39,7 @@ class Scraper
     binding.pry
     student = {
     
-    :twitter => doc.css("social-icon-container a").attribute("href").text
+    :twitter => doc.css("div.social-icon-container a").first.attribute("href").text
     #:linkedin =>,
     #:github =>,
     #:blog =>,
