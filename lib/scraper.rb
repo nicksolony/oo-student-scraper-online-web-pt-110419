@@ -61,7 +61,9 @@ class Scraper
 #    else
 #      blog = ""
 #    end
-#    
+    
+
+    
     
     student = {
     
