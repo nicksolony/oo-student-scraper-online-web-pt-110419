@@ -70,7 +70,9 @@ class Scraper
     when "linkedin-icon.png"
       linkedin = xml.css("a").attribute("href").text
     when "github-icon.png"
-      linkedin = xml.css("a").attribute("href").text
+      github = xml.css("a").attribute("href").text
+    when "github-icon.png"
+      github = xml.css("a").attribute("href").text
     
     }
     
