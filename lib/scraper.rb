@@ -68,13 +68,13 @@ class Scraper
     if xml.css("img") != nil
     case xml.css("img").attribute("src").text.split("/img/")[1]
     when "twitter-icon.png"
-      student << :twitter  xml.attribute("href").text
+      student[:twitter] =  xml.attribute("href").text
     when "linkedin-icon.png"
-      student << :linkedin xml.attribute("href").text
+      student [:linkedin] = xml.attribute("href").text
     when "github-icon.png"
-     student << :github xml.attribute("href").text
+     student [:github] = xml.attribute("href").text
     when "rss-icon.png"
-      student << :blog xml.attribute("href").text
+      student [:blog] = xml.attribute("href").text
     else
       nil
     end
