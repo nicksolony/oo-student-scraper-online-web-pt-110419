@@ -37,19 +37,19 @@ class Scraper
   def self.scrape_profile_page(profile_url)
      doc = Nokogiri::HTML(open(profile_url))
    binding.pry
-    if doc.css("div.social-icon-container a")[0].any?
+    if doc.css("div.social-icon-container a")[0] != nil
       twitter = doc.css("div.social-icon-container a")[0].attribute("href").text
     else
       twitter = ""
     end
     
-    if doc.css("div.social-icon-container a")[1].any?
+    if doc.css("div.social-icon-container a")[1] != nil
       linkedin = doc.css("div.social-icon-container a")[1].attribute("href").text
     else
       linkedin = ""
     end
     
-    if doc.css("div.social-icon-container a")[2].any?
+    if doc.css("div.social-icon-container a")[2] != nil
       github = doc.css("div.social-icon-container a")[2].attribute("href").text
     else
       github = ""
