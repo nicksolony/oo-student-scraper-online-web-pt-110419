@@ -70,11 +70,11 @@ class Scraper
     when "twitter-icon.png"
       student { :twitter => xml.attribute("href").text}
     when "linkedin-icon.png"
-      linkedin = xml.attribute("href").text
+      student { :linkedin => xml.attribute("href").text}
     when "github-icon.png"
-      github = xml.attribute("href").text
+     student { :github => xml.attribute("href").text}
     when "rss-icon.png"
-      blog = xml.attribute("href").text
+      student { :blog => xml.attribute("href").text}
     else
       nil
     end
