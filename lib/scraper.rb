@@ -38,7 +38,7 @@ class Scraper
      doc = Nokogiri::HTML(open(profile_url))
    # binding.pry
    
-   if 
+   
     student = {
     
     #:twitter => doc.css("div.social-icon-container a").first.attribute("href").text,
