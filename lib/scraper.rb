@@ -88,7 +88,7 @@ class Scraper
     :bio => doc.css("div.description-holder p").text
     }
     
-    
+  end
 end
 
 # student_id:  student.attribute("id").text.split("-card")
