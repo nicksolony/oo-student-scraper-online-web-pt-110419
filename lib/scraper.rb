@@ -80,6 +80,8 @@ class Scraper
     end
   end
     }
+    :profile_quote => doc.css("div.profile-quote").text,
+    :bio => doc.css("div.description-holder p").text
     
 #    student = {
 #    
