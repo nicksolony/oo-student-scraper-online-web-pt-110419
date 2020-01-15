@@ -39,7 +39,9 @@ class Scraper
     binding.pry
     if doc.css("div.social-icon-container a")[2]
       github = doc.css("div.social-icon-container a")[2].attribute("href").text
-   
+    else
+      github = ""
+    end
     student = {
     
     #:twitter => doc.css("div.social-icon-container a").first.attribute("href").text,
