@@ -75,8 +75,8 @@ class Scraper
      student [:github] = xml.attribute("href").text
     when "rss-icon.png"
       student [:blog] = xml.attribute("href").text
-    else
-      nil
+    #else
+    #  nil
     end
   end
     }
