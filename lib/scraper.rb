@@ -65,7 +65,7 @@ class Scraper
     doc.css("div.social-icon-container a").each {|xml| 
     #binding.pry
     case xml.css("img").attribute("src").text.split("/img/")[1]
-    when "linkedin-icon.png"
+    when "twitter-icon.png"
       twitter = xml.css("a").attribute("href").text
     when (include? "linkedin")
       linkedin = xml.css("a").attribute("href").text
