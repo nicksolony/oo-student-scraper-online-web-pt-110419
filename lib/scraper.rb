@@ -81,8 +81,8 @@ class Scraper
   end
     }
     
-    
     student = {
+    
     
     #:twitter => doc.css("div.social-icon-container a").first.attribute("href").text,
     :twitter => twitter,
