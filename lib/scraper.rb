@@ -38,30 +38,30 @@ class Scraper
      doc = Nokogiri::HTML(open(profile_url))
   
   binding.pry
-    if doc.css("div.social-icon-container a")[0] != nil
-      twitter = doc.css("div.social-icon-container a")[0].attribute("href").text
-    else
-      twitter = ""
-    end
-    
-    if doc.css("div.social-icon-container a")[1] != nil
-      linkedin = doc.css("div.social-icon-container a")[1].attribute("href").text
-    else
-      linkedin = ""
-    end
-    
-    if doc.css("div.social-icon-container a")[2] != nil
-      github = doc.css("div.social-icon-container a")[2].attribute("href").text
-    else
-      github = ""
-    end
-    
-    if doc.css("div.social-icon-container a")[3] != nil
-      blog = doc.css("div.social-icon-container a")[3].attribute("href").text
-    else
-      blog = ""
-    end
-    
+#    if doc.css("div.social-icon-container a")[0] != nil
+#      twitter = doc.css("div.social-icon-container a")[0].attribute("href").text
+#    else
+#      twitter = ""
+#    end
+#    
+#    if doc.css("div.social-icon-container a")[1] != nil
+#      linkedin = doc.css("div.social-icon-container a")[1].attribute("href").text
+#    else
+#      linkedin = ""
+#    end
+#    
+#    if doc.css("div.social-icon-container a")[2] != nil
+#      github = doc.css("div.social-icon-container a")[2].attribute("href").text
+#    else
+#      github = ""
+#    end
+#    
+#    if doc.css("div.social-icon-container a")[3] != nil
+#      blog = doc.css("div.social-icon-container a")[3].attribute("href").text
+#    else
+#      blog = ""
+#    end
+#    
     
     student = {
     
