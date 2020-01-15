@@ -62,7 +62,7 @@ class Scraper
 #      blog = ""
 #    end
     
-    case doc.css("div.social-icon-container a")[0].
+    case doc.css("div.social-icon").attribute("src")[0].
 
     
     
