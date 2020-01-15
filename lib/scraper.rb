@@ -77,6 +77,7 @@ class Scraper
     else
       nil
     end
+  end
     }
     
     
