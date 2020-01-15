@@ -38,7 +38,7 @@ class Scraper
      doc = Nokogiri::HTML(open(profile_url))
     student = {
     
-    :twitter
+    :twitter => doc.css()
     :linkedin
     :github
     :blog
