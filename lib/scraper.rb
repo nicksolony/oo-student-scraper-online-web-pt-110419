@@ -37,7 +37,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
      doc = Nokogiri::HTML(open(profile_url))
   
-  binding.pry
+  
 #    if doc.css("div.social-icon-container a")[0] != nil
 #      twitter = doc.css("div.social-icon-container a")[0].attribute("href").text
 #    else
@@ -62,11 +62,11 @@ class Scraper
 #      blog = ""
 #    end
     
-    doc.css("div.social-icon-container a")
-    case doc.css("div.social-icon-container a")[0]
+    doc.css("div.social-icon-container a").each |xml| {
+    case xml.attribute
 
     
-    
+    }
     student = {
     
     #:twitter => doc.css("div.social-icon-container a").first.attribute("href").text,
