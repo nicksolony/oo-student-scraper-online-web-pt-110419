@@ -71,6 +71,8 @@ class Scraper
       linkedin = xml.css("a").attribute("href").text
     
     }
+    
+    
     student = {
     
     #:twitter => doc.css("div.social-icon-container a").first.attribute("href").text,
