@@ -80,6 +80,7 @@ class Scraper
     end
   end
     }
+  student.merge
     :profile_quote => doc.css("div.profile-quote").text,
     :bio => doc.css("div.description-holder p").text
     
