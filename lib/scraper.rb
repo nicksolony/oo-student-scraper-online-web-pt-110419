@@ -69,7 +69,7 @@ class Scraper
       twitter = xml.css("a").attribute("href").text
     when "linkedin-icon.png"
       linkedin = xml.css("a").attribute("href").text
-    when "linkedin-icon.png"
+    when "github-icon.png"
       linkedin = xml.css("a").attribute("href").text
     
     }
