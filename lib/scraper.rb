@@ -64,7 +64,7 @@ class Scraper
     
     doc.css("div.social-icon-container a").each |xml| {
     binding.pry
-    case xml.attribute
+   # case xml.attribute
 
     
     }
