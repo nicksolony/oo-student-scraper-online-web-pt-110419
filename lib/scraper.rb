@@ -36,8 +36,15 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
      doc = Nokogiri::HTML(open(profile_url))
-    student = 
+    student = {
     
+    :twitter
+    :linkedin
+    :github
+    :blog
+    :profile_quote
+    :bio
+    }
     
     doc.css("div.student-card").each { |student| 
     
