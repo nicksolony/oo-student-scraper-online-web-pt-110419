@@ -38,7 +38,7 @@ class Scraper
      doc = Nokogiri::HTML(open(profile_url))
     student = {
     binding.pry
-    :twitter => doc.css("a").attribute("href").text)
+    :twitter => doc.css("a").attribute("href").text
     :linkedin
     :github
     :blog
