@@ -72,7 +72,7 @@ class Scraper
     when "github-icon.png"
       github = xml.css("a").attribute("href").text
     when "rss-icon.png"
-      github = xml.css("a").attribute("href").text
+      blog = xml.css("a").attribute("href").text
     
     }
     
