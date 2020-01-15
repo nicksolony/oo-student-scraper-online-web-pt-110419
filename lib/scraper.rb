@@ -10,6 +10,7 @@ class Scraper
     
     students = []
     
+    
     doc.css("div.student-card").each { |student| 
     
       name = student.css("h4.student-name").text
