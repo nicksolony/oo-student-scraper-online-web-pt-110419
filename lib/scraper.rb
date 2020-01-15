@@ -66,7 +66,7 @@ class Scraper
     binding.pry
     case xml.css("img").attribute("src").text.split("/img/")[1]
     when
-      .include?
+      .include? "twitter"
 
     
     }
