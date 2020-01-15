@@ -64,6 +64,7 @@ class Scraper
     
     doc.css("div.social-icon-container a").each { |xml| 
     #binding.pry
+    if xml.css("img") != nil
     case xml.css("img").attribute("src").text.split("/img/")[1]
     when "twitter-icon.png"
       twitter = xml.css("a").attribute("href").text
