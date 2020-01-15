@@ -55,10 +55,10 @@ class Scraper
       github = ""
     end
     
-    if doc.css("div.social-icon-container a")[2].any?
-      github = doc.css("div.social-icon-container a")[2].attribute("href").text
+    if doc.css("div.social-icon-container a")[3].any?
+      blog = doc.css("div.social-icon-container a")[3].attribute("href").text
     else
-      github = ""
+      blog = ""
     end
     
     
