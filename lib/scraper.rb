@@ -62,6 +62,7 @@ class Scraper
 #      blog = ""
 #    end
     
+    case 
 
     
     
