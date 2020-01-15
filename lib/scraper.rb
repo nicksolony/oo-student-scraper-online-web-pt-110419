@@ -44,7 +44,7 @@ class Scraper
     end
     
     
-    if doc.css("div.social-icon-container a")[2] == true
+    if doc.css("div.social-icon-container a")[2].any?
       github = doc.css("div.social-icon-container a")[2].attribute("href").text
     else
       github = ""
