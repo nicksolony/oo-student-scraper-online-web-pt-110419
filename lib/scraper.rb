@@ -68,7 +68,7 @@ class Scraper
     when
       .include? "twitter"
       twitter = xml.css("a").attribute("href").text
-
+    
     
     }
     student = {
