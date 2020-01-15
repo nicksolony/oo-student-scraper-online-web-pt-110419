@@ -37,8 +37,8 @@ class Scraper
   def self.scrape_profile_page(profile_url)
      doc = Nokogiri::HTML(open(profile_url))
     student = {
-    
-    :twitter => doc.css()
+    binding.pry
+    :twitter => doc.css("a").attribute("href").text)
     :linkedin
     :github
     :blog
